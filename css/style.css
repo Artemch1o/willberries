@@ -89,4 +89,30 @@ button {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+  opacity: 0.5;
+}
+
+.card__wrapper {
+  padding: 60px 46px 80px;
+  border-radius: 10px;
+}
+.card__wrapper--1 {
+  background: url(../img/card-1.jpg) no-repeat center center/cover;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262D33;
+  font-family: "Roboto Slab", sans-serif;
+  max-width: 220px;
+  margin-bottom: 15px;
+}
+.card__text {
+  max-width: 175px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 25px;
 }/*# sourceMappingURL=style.css.map */

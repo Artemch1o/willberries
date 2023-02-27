@@ -61,7 +61,8 @@ button {
 .slider {
     position: relative;
     padding: 90px 0 100px;
-    background:  #B4D1E0 url('../img/image-064.png') no-repeat center right 23% / contain; //расположение фон: //
+    background: #B4D1E0 url('../img/image-064.png') no-repeat center right 23% / contain; //расположение фон: //
+
     &__title {
         color: #262D33;
         font-weight: 700;
@@ -79,10 +80,42 @@ button {
         margin-bottom: 40px;
     }
 
-    &__nav{
+    &__nav {
         position: absolute;
         width: 100%;
         top: 50%;
         transform: translateY(-50%);
+        opacity: 0.5;
+    }
+}
+
+.card {
+
+&__wrapper{
+    padding: 60px 46px 80px;
+    border-radius: 10px;
+
+    &--1{
+        background: url(../img/card-1.jpg) no-repeat center center / cover ;
+    }
+}
+
+    &__title {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #262D33;
+        font-family: 'Roboto Slab', sans-serif;
+        max-width: 220px;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        max-width: 175px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4B5157;
+        font-family: 'Lato' , sans-serif;
+        margin-bottom: 25px;
     }
 }
