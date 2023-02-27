@@ -13,7 +13,16 @@ button {
     background: none;
 }
 
-.header{
+.label {
+    background-color: #3DC47E;
+    border-radius: 3px;
+    padding: 5px 12px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.header {
     padding: 15px 0;
     background-color: #fff;
 }
@@ -47,4 +56,33 @@ button {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+.slider {
+    position: relative;
+    padding: 90px 0 100px;
+    background:  #B4D1E0 url('../img/image-064.png') no-repeat center right 23% / contain; //расположение фон: //
+    &__title {
+        color: #262D33;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 70px;
+        font-family: 'Roboto Slab', sans-serif;
+        margin: 20px 0 15px;
+    }
+
+    &__desc {
+        font-size: 18px;
+        line-height: 30px;
+        color: #4B5157;
+        max-width: 335px;
+        margin-bottom: 40px;
+    }
+
+    &__nav{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
