@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // border: 1px solid red;
+
 }
 
 body {
@@ -90,15 +92,27 @@ button {
 }
 
 .card {
+    padding: 50px 0 60px;
 
-&__wrapper{
-    padding: 60px 46px 80px;
-    border-radius: 10px;
-
-    &--1{
-        background: url(../img/card-1.jpg) no-repeat center center / cover ;
+    &__container {
+        margin-bottom: 30px;
     }
-}
+
+    &__wrapper {
+        padding: 60px 46px 80px;
+        border-radius: 10px;
+        height: 100%;
+
+        @for $item from 1 through 4 {
+            &--#{$item} {
+                background: url(../img/card-#{$item}.jpg) no-repeat center center / cover;
+            }
+
+
+
+        }
+
+    }
 
     &__title {
         font-weight: 700;
@@ -108,6 +122,10 @@ button {
         font-family: 'Roboto Slab', sans-serif;
         max-width: 220px;
         margin-bottom: 15px;
+
+        &--white {
+            color: #fff;
+        }
     }
 
     &__text {
@@ -115,7 +133,73 @@ button {
         font-size: 14px;
         line-height: 20px;
         color: #4B5157;
-        font-family: 'Lato' , sans-serif;
+        font-family: 'Lato', sans-serif;
         margin-bottom: 25px;
+
+        &--white {
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        &--pink {
+            color: #FFC4C9;
+        }
     }
+
+    &__price {
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+}
+
+
+
+
+.goods {
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 36px 35px 37px;
+        position: relative;
+    }
+
+    &__marks {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        border-radius: 3px;
+        background-color: #3DC47E;
+        padding: 5px 12px;
+        color: #fff;
+    }
+
+    &__title {
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 25px;
+        color: #262D33;
+        text-align: center;
+        font-family: 'Roboto Slab' , sans-serif;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4B5157;
+        margin-bottom: 20px;
+    }
+
+    &__price {
+        font-size: 18px;
+        line-height: 30px;
+        color: #262D33;
+    }
+
+
 }

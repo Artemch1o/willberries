@@ -92,12 +92,28 @@ button {
   opacity: 0.5;
 }
 
+.card {
+  padding: 50px 0 60px;
+}
+.card__container {
+  margin-bottom: 30px;
+}
 .card__wrapper {
   padding: 60px 46px 80px;
   border-radius: 10px;
+  height: 100%;
 }
 .card__wrapper--1 {
   background: url(../img/card-1.jpg) no-repeat center center/cover;
+}
+.card__wrapper--2 {
+  background: url(../img/card-2.jpg) no-repeat center center/cover;
+}
+.card__wrapper--3 {
+  background: url(../img/card-3.jpg) no-repeat center center/cover;
+}
+.card__wrapper--4 {
+  background: url(../img/card-4.jpg) no-repeat center center/cover;
 }
 .card__title {
   font-weight: 700;
@@ -108,6 +124,9 @@ button {
   max-width: 220px;
   margin-bottom: 15px;
 }
+.card__title--white {
+  color: #fff;
+}
 .card__text {
   max-width: 175px;
   font-size: 14px;
@@ -115,4 +134,62 @@ button {
   color: #4B5157;
   font-family: "Lato", sans-serif;
   margin-bottom: 25px;
+}
+.card__text--white {
+  color: rgba(255, 255, 255, 0.85);
+}
+.card__text--pink {
+  color: #FFC4C9;
+}
+.card__price {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.goods__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 36px 35px 37px;
+  position: relative;
+}
+.goods__marks {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  border-radius: 3px;
+  background-color: #3DC47E;
+  padding: 5px 12px;
+  color: #fff;
+}
+.goods__title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #262D33;
+  text-align: center;
+  font-family: "Roboto Slab", sans-serif;
+}
+.goods__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+  margin-bottom: 20px;
+}
+.goods__price {
+  font-size: 18px;
+  line-height: 30px;
+  color: #262D33;
 }/*# sourceMappingURL=style.css.map */
