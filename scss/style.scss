@@ -157,12 +157,26 @@ button {
 
 
 .goods {
+    &__heading {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #262D33;
+        font-family: 'Roboto Slab';
+    }
+
+    &__link {
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        color: #262D33;
+    }
 
     &__card {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 30px 36px 35px 37px;
+        padding: 30px 36px 105px 37px;
         position: relative;
     }
 
@@ -184,7 +198,7 @@ button {
         line-height: 25px;
         color: #262D33;
         text-align: center;
-        font-family: 'Roboto Slab' , sans-serif;
+        font-family: 'Roboto Slab', sans-serif;
     }
 
     &__text {
@@ -202,4 +216,53 @@ button {
     }
 
 
+}
+
+
+.footer {
+    background-color: #8F79D4;
+    padding: 45px 0;
+   
+    &__info {
+        list-style-type: none;
+    }
+    
+    &__decoration {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #E7D9FF;
+    }
+    
+    &__link{
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__partners {
+        gap: 25px;
+    }
+
+    &__img {
+        object-fit: contain;
+    }
+
+    &__btn{
+        width: 40px;
+        height: 40px;
+        border: 1px solid #D8BFFF;
+        border-radius: 50%;
+        margin-left: 15px;
+    }
+
+    &__hr {
+        border: none;
+        height: 1px;
+        background-color: #d88fff;
+        opacity: 0.5;
+        margin: 46px 0 36px;
+    }
 }

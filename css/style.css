@@ -148,6 +148,19 @@ button {
   color: #FFFFFF;
 }
 
+.goods__heading {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262D33;
+  font-family: "Roboto Slab";
+}
+.goods__link {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #262D33;
+}
 .goods__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,7 +172,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 36px 35px 37px;
+  padding: 30px 36px 105px 37px;
   position: relative;
 }
 .goods__marks {
@@ -192,4 +205,46 @@ button {
   font-size: 18px;
   line-height: 30px;
   color: #262D33;
+}
+
+.footer {
+  background-color: #8F79D4;
+  padding: 45px 0;
+}
+.footer__info {
+  list-style-type: none;
+}
+.footer__decoration {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #E7D9FF;
+}
+.footer__link {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer__partners {
+  gap: 25px;
+}
+.footer__img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footer__btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #D8BFFF;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.footer__hr {
+  border: none;
+  height: 1px;
+  background-color: #d88fff;
+  opacity: 0.5;
+  margin: 46px 0 36px;
 }/*# sourceMappingURL=style.css.map */
