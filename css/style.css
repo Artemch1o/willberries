@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -28,6 +29,20 @@ button {
   background-color: #fff;
 }
 
+@media (max-width: 600px) {
+  .nav {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+}
 .nav__item {
   list-style-type: none;
 }
@@ -67,6 +82,11 @@ button {
   padding: 90px 0 100px;
   background: #B4D1E0 url("../img/image-064.png") no-repeat center right 23%/contain;
 }
+@media (max-width: 600px) {
+  .slider {
+    padding: 30px 0;
+  }
+}
 .slider__title {
   color: #262D33;
   font-weight: 700;
@@ -75,12 +95,22 @@ button {
   font-family: "Roboto Slab", sans-serif;
   margin: 20px 0 15px;
 }
+@media (max-width: 600px) {
+  .slider {
+    font-size: 32px;
+  }
+}
 .slider__desc {
   font-size: 18px;
   line-height: 30px;
   color: #4B5157;
   max-width: 335px;
   margin-bottom: 40px;
+}
+@media (max-width: 600px) {
+  .slider__desc {
+    font-size: 16px;
+  }
 }
 .slider__nav {
   position: absolute;
@@ -90,6 +120,8 @@ button {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   opacity: 0.5;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .card {
@@ -211,6 +243,17 @@ button {
   background-color: #8F79D4;
   padding: 45px 0;
 }
+@media (max-width: 600px) {
+  .footer__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .footer__info {
   list-style-type: none;
 }
@@ -229,6 +272,13 @@ button {
 }
 .footer__partners {
   gap: 25px;
+}
+@media (max-width: 768px) {
+  .footer__partners {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .footer__img {
   -o-object-fit: contain;
